@@ -1,0 +1,55 @@
+EX NO 10(A): WRITE A FUNCTION TO TRAVERSE THE LINKED LIST AND DISPLAY IT IN THE FOLLOWING FORMAT
+
+
+AIM:
+To write C program to write a function to traverse the linked list and display it in the following format.
+
+
+ALGORITHM:
+1. Start.
+2. Define a variables.
+3. Write a functions to traverse the linked list and display it in the following format.
+4. Read the value using scanf.
+5. Ask the user to make an input.
+6. Print out the answer.
+7. End
+
+
+PROGRAM:
+struct Node{
+char data;
+struct Node *next;
+}*head;
+void display()
+{
+struct Node *temp;
+temp=head;
+while(temp!=NULL)
+{
+printf("%c\n",temp->data);
+temp=temp->next;
+}
+}
+
+
+C program to write a function to traverse the linked list and display it in the following format.
+
+Developed by:  Prem kumar K
+RegisterNumber:  212223060209
+
+TEST:
+head = NULL;
+insert('A');
+insert('B');
+insert('C');
+display();
+
+
+OUTPUT:
+
+A
+B
+C
+
+RESULT:
+Thus, the program is executed and verified successfully
