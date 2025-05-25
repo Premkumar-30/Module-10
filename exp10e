@@ -17,7 +17,6 @@ PROGRAM:
 #include <stdio.h>
 #include <stdlib.h>
 
-// Define the structure for a node
 struct Node {
     int data;
     struct Node* prev;
@@ -26,7 +25,6 @@ struct Node {
 
 struct Node* head = NULL;
 
-// Function to insert at end
 void insertEnd(int value) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->data = value;
@@ -45,7 +43,6 @@ void insertEnd(int value) {
     printf("%d inserted at end\n", value);
 }
 
-// Function to delete from front
 void deleteFront() {
     if (head == NULL) {
         printf("List is Empty\n");
@@ -59,7 +56,6 @@ void deleteFront() {
     free(temp);
 }
 
-// Function to display the list
 void display() {
     struct Node* temp = head;
     if (temp == NULL) {
